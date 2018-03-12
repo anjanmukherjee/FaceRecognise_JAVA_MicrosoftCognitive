@@ -1,0 +1,20 @@
+Request for an key from Microsoft Face API:
+
+Step 1 : Get the detect face for java from https://docs.microsoft.com/en-in/azure/cognitive-services/face/quickstarts/java
+To know how to upload file from local system, refer uploadpic.
+
+Step 2 : Use takepic.java to take picture from default webcam. 
+needed jar files: http://www.java2s.com/Code/Jar/w/Downloadwebcamcapture033jar.htm
+Import all the jar files from sub folder too
+
+Step3 : Use persongroup.java to create new Person_group.
+
+Step4 : Use persongroup_person.java to create new Person.
+
+Step5 : Use the person id from above code in uploadpic.java to Upload pic for that particular person.
+
+Step6 : Use traindata.java to train the group.
+
+Step7: faceregonise.java to get the confidence no 
+
+NOTE: facerecognise dont work with octet stream, hence the face id from the step 1 need to be passed. Face ids are valid for only 24 hours
